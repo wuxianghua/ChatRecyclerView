@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/y20"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/friend_avatar"
+        android:layout_width="@dimen/y56"
+        android:layout_height="@dimen/y56" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingBottom="@dimen/x10"
+            android:paddingTop="@dimen/x5"
+            android:id="@+id/friend_content"
+            android:layout_width="wrap_content"
+            android:maxWidth="@dimen/y450"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/x7"
+            android:background="@drawable/bg_wechat_chat1"
+            android:layout_marginLeft="@dimen/x5"
+            android:paddingRight="@dimen/x20"
+            android:paddingLeft="@dimen/y45"/>
+        <LinearLayout
+            android:id="@+id/ll_address_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/address_content"
+                android:layout_width="@dimen/y455"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/x7"
+                android:lines="2"
+                android:ellipsize="end"
+                android:background="@drawable/bg_wechat_chat1"
+                android:layout_marginLeft="@dimen/x25"
+                android:paddingRight="@dimen/x20"
+                android:paddingLeft="@dimen/y45"/>
+            <ImageView
+                android:id="@+id/friend_address"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_width="@dimen/x436"
+                android:layout_height="@dimen/y164"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
